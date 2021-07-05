@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>myJourney</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<form id="diary">
+			<div id="diary-title" style="background-image: url('images/diary.png'); padding-top: 20px; background-size: relative;">
+				<input class="center1" id="journey-title" value="Journey 1" placeholder="Journey 1"><br><br><br><br><br>
+				<p id="date">01/01/0001</p><br>
+			</div>
+			<textarea rows="41" cols="500" class="center1" id="diary-diary" placeholder="Write about your day here :)" value="">
+			</textarea><br>
+		</form>
+		
+		<div class="centerButtons">
+			<button id="delete">delete</button>
+			<button onclick="location.href = 'diary-selector.html'" id="goback">go back</button>
+			<button id="savebutton">save</button>
+		</div>
+		
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+		
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		     https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+		
+		<script>
+		  // Your web app's Firebase configuration
+		  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		  var firebaseConfig = {
+		    apiKey: "AIzaSyDV0dGu7Bapb7Otr1gZgHUhuDjGQEjMy0c",
+		    authDomain: "taskme-d5d80.firebaseapp.com",
+		    projectId: "taskme-d5d80",
+		    storageBucket: "taskme-d5d80.appspot.com",
+		    messagingSenderId: "928665627549",
+		    appId: "1:928665627549:web:478209245512fce9739d74",
+		    measurementId: "G-3BSJ43MDRP"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		  firebase.analytics();
+		</script>
+		
+		<script type="text/javascript">
+			window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+		</script>
+
+		
+		<script src="./scripts/diary.js"></script>
+	</body>
+</html>
