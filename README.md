@@ -15,4 +15,5 @@ We also were able to learn how to setup Google Firebase in web applications via 
 We look forward to continuing development on this project by working on security, making it mobile-supported and polishing up the front-end design. Once we are happy with the front-end, and there are no security flaws, we plan to release this to the public under a custom domain.
 
 ## How to use our hack
-Visit our Github page and create or login to an account and enjoy.
+Visit our Qoom url and create or login to an account and enjoy.
+https://loyalsheep89.qoom.space/ByteKode_2021_Hackathon/myJourney/index.html
