@@ -1,4 +1,4 @@
-taskMe
+myJourney
 ==================
 ## What this project does
 myJourney is a free-to-use personal diary that aims to bring ease in keeping a journal of days and events, and letting users freely express themselves within their Journey Books.
